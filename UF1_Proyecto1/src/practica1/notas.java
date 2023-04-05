@@ -19,8 +19,8 @@ public class notas {
 	 * Aqui podemos observar las variables notas y las variables que harán referencia a las unidades
 	 */
 	//declaramos la variables que nos hacen falta
-	double uf1, uf2, uf3;
-	double acu1, acu2, acu3, def;
+	double unidad1, unidad2, unidad3;
+	double eval1, eval2, eval3, def;
 	//utilizamos escanner para poder introducir datos
 	
 	/**
@@ -58,9 +58,9 @@ public class notas {
 	
 	/**
 	 * En este metodo se comprueba que se ha introducido las notas correctamente
-	 * @param uf1 unidad formativa 1
-	 * @param uf2 unidad formativa 2
-	 * @param uf3 unidad formativa 3
+	 * @param unidad1 unidad formativa 1
+	 * @param unidad2 unidad formativa 2
+	 * @param unidad3 unidad formativa 3
 	 * @return devuelve si se ha introducido bien las notas
 	 */
 	
@@ -94,29 +94,29 @@ public class notas {
 	
 	/**
 	 * En este metodo se introduce un porcentaje para calcular las notas y crear las acu
-	 * @param uf1 unidad formativa 1
-	 * @param uf2 unidad formativa 2
-	 * @param uf3 unidad formativa 3
+	 * @param unidad1 unidad formativa 1
+	 * @param unidad2 unidad formativa 2
+	 * @param unidad3 unidad formativa 3
 	 */
 	
 	public void Calculonotas() {
-		acu1= uf1*0.35;
-		acu2 = uf2 * 0.35;
-		acu3 = uf3 * 0.30;
+		eval1= unidad1*0.35;
+		eval2 = unidad2*0.35;
+		eval3 = unidad3*0.30;
 		
-		def = acu1 + acu2+ acu3;
+		def = eval1 + eval2+ eval3;
 		
 		//hasta aqui la tenemos calculada pero no la mostramos
 	}
 	
 	/**
 	 * En este metodo muestra las notas introducidas
-	 * @param uf1 unidad formativa 1
-	 * @param uf2 unidad formativa 2
-	 * @param uf3 unidad formativa 3
-	 * @param acu1
-	 * @param acu2
-	 * @param acu3
+	 * @param unidad1 unidad formativa 1
+	 * @param unidad2 unidad formativa 2
+	 * @param unidad3 unidad formativa 3
+	 * @param eval1
+	 * @param eval2
+	 * @param eval3
 	 * @param def nota definitiva
 	 * @return devuelve la nota introducida
 	 */
@@ -124,13 +124,13 @@ public class notas {
 	public void Mostrar() {
 		//print ln lo que hace es que al terminar el print baja la linea
 		System.out.println(" notas introducidas son:");
-		System.out.println(" nota1 = " + uf1);
-		System.out.println(" nota2 = " + uf2);
-		System.out.println(" nota3 = " + uf3);
+		System.out.println(" nota1 = " + unidad1);
+		System.out.println(" nota2 = " + unidad2);
+		System.out.println(" nota3 = " + unidad3);
 		
-		System.out.println(" acumuado 1 = "+ acu1);
-		System.out.println(" acumuado 2 = "+ acu2);
-		System.out.println(" acumuado 3 = "+ acu3);
+		System.out.println(" acumuado 1 = "+ eval1);
+		System.out.println(" acumuado 2 = "+ eval2);
+		System.out.println(" acumuado 3 = "+ eval3);
 		
 		System.out.println(" nota definitiva es = "+ def);
 		
