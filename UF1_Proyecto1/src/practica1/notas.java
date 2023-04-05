@@ -40,16 +40,16 @@ public class notas {
 		
 		System.out.print("ingrese nota 1: ");
 		
-		uf1= entrada.nextDouble();
+		unidad1= entrada.nextDouble();
 
 		
 		
 		System.out.print("ingrese nota 2: ");
 		
-		uf2= entrada.nextDouble();
+		unidad2= entrada.nextDouble();
 		System.out.print("ingrese nota 3: ");
 		
-		uf3= entrada.nextDouble();
+		unidad3= entrada.nextDouble();
 		
 	
 	}
@@ -66,20 +66,20 @@ public class notas {
 	
 	public void comprobarcion(){
 		
-		if (uf1>10) {
+		if (unidad1>10) {
 			System.out.println(" nota1 mal introducida");
 			
 		}else {
 			System.out.println(" nota1 correcta");
 		}
 		
-		if (uf2>10) {
+		if (unidad2>10) {
 			System.out.println(" nota2 mal introducida");
 			
 		}else {
 			System.out.println(" nota2 correcta");
 		}
-		if (uf3>10) {
+		if (unidad3>10) {
 			System.out.println(" nota3 mal introducida");
 			
 		}else {
